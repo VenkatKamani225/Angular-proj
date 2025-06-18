@@ -7,7 +7,7 @@
             <div *ngIf = 'nam.touched && nam.invalid' class="alert-danger">Invalid data</div>
         </div>
         <div class="form-group">
-            <label for="lastName">LaststName</label>
+            <label for="lastame">LaststName</label>
             <input type="text" name="lastName" class ="form-control" ngModel>
         </div>
         <div class="form-group">
@@ -22,3 +22,8 @@
     </form>
 
 </div>
+
+Create a component through Terminal cd src-> cd app -> ng g c form-component
+#login, #nam are variables
+when button type is submit, it will redirect to ngSubmit of form, we can declare our submit method in component.ts file
+You can fetch form values through #login= ngForm and display it or based on that display error
